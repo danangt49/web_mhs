@@ -1,0 +1,35 @@
+{{define "form"}}
+{{define "result"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daftar data mahasiswa</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body>
+      <table class="table table-bordered table-striped table-hover">
+      <h1> Data Mahasiswa</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nim</th>
+            <th>Nama</th>
+            <th>No</th>	
+            <th>Alamat</th>	
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{.nim}}</td>
+            <td>{{.nama}}</td>
+            <td>{{.no}}</td>
+            <td>{{.alamat}}</td>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+</html>
+{{end}}
+{{end}}
